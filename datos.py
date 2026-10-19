@@ -1,13 +1,3 @@
-"""Datos iniciales del proyecto (coordenadas aproximadas de Ibagué).
-
-Cada punto se "pega" automáticamente al nodo de calle más cercano del grafo,
-así que no importa que las coordenadas no sean exactas.
-
-Medidas en metros (alto, ancho, profundo) y peso en kg.
-Para los vehículos, alto/ancho/profundo son las medidas de la carga que pueden llevar.
-Prioridad de los pedidos: 3 = urgente, 2 = normal, 1 = puede esperar.
-"""
-
 # Bodega de la empresa (los camiones y livianos salen de aquí)
 BODEGA = (4.4268, -75.2075)
 # Plaza de Bolívar (la moto sale del centro)
