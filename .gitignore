@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+ibague.osm
+ibague.graphml
+estado.json

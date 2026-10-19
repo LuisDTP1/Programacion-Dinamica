@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rutas de transporte en Ibagué</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="/static/css/estilos.css">
+</head>
+<body>
+<div id="panel">
+  <header>
+    <h1>Rutas de transporte en Ibagué</h1>
+    <p>Dijkstra para las calles, mochila y Held-Karp (programación dinámica) para repartir y ordenar.</p>
+  </header>
+  <div id="acciones">
+    <button id="btnCalcular" class="principal">Calcular rutas</button>
+    <button id="btnReiniciar" title="Vuelve a los pedidos y vehículos de ejemplo">Restaurar ejemplo</button>
+  </div>
+  <nav>
+    <button data-tab="pedidos" class="activa">Pedidos</button>
+    <button data-tab="vehiculos">Vehículos</button>
+    <button data-tab="resultado">Resultado</button>
+  </nav>
+
+  <section id="tab-pedidos" class="activa">
+    <table id="tablaPedidos"></table>
+    <h2>Agregar pedido</h2>
+    <p class="ayuda">Haz clic en el mapa para llenar la latitud y la longitud.</p>
+    <div class="grid">
+      <div class="ancho"><label for="p_cliente">Cliente</label><input id="p_cliente"></div>
+      <div><label for="p_peso">Peso (kg)</label><input id="p_peso" type="number" min="0" step="any" value="20"></div>
+      <div><label for="p_prioridad">Prioridad</label>
+        <select id="p_prioridad"><option value="3">3 – urgente</option><option value="2" selected>2 – normal</option><option value="1">1 – puede esperar</option></select></div>
+      <div><label for="p_alto">Alto (m)</label><input id="p_alto" type="number" min="0" step="any" value="0.4"></div>
+      <div><label for="p_ancho">Ancho (m)</label><input id="p_ancho" type="number" min="0" step="any" value="0.4"></div>
+      <div><label for="p_profundo">Profundo (m)</label><input id="p_profundo" type="number" min="0" step="any" value="0.4"></div>
+      <div></div>
+      <div><label for="p_lat">Latitud</label><input id="p_lat" type="number" step="any"></div>
+      <div><label for="p_lon">Longitud</label><input id="p_lon" type="number" step="any"></div>
+    </div>
+    <p><button id="btnAgregarPedido">Agregar pedido</button></p>
+  </section>
+
+  <section id="tab-vehiculos">
+    <table id="tablaVehiculos"></table>
+    <h2>Agregar vehículo</h2>
+    <p class="ayuda">Alto, ancho y profundo son las medidas de la carga que puede llevar. Haz clic en el mapa para fijar dónde sale.</p>
+    <div class="grid">
+      <div><label for="v_id">Nombre (opcional)</label><input id="v_id" placeholder="camion2"></div>
+      <div><label for="v_tipo">Tipo</label>
+        <select id="v_tipo"><option value="camion">Camión</option><option value="liviano">Vehículo liviano</option><option value="moto">Moto</option></select></div>
+      <div><label for="v_peso">Peso máximo (kg)</label><input id="v_peso" type="number" min="0" step="any" value="500"></div>
+      <div><label for="v_alto">Alto (m)</label><input id="v_alto" type="number" min="0" step="any" value="1.5"></div>
+      <div><label for="v_ancho">Ancho (m)</label><input id="v_ancho" type="number" min="0" step="any" value="1.5"></div>
+      <div><label for="v_profundo">Profundo (m)</label><input id="v_profundo" type="number" min="0" step="any" value="2"></div>
+      <div><label for="v_lat">Latitud de salida</label><input id="v_lat" type="number" step="any"></div>
+      <div><label for="v_lon">Longitud de salida</label><input id="v_lon" type="number" step="any"></div>
+    </div>
+    <p><button id="btnAgregarVehiculo">Agregar vehículo</button></p>
+  </section>
+
+  <section id="tab-resultado"><p class="ayuda">Aún no hay rutas. Pulsa «Calcular rutas».</p></section>
+  <div style="padding:0 16px 16px"><div id="error" role="alert"></div></div>
+</div>
+<div id="mapa"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+const COLORES = ["#c0392b", "#1e7d4f", "#2a5db0", "#d9822b", "#7d3c98", "#0b6e7f", "#8d6e1f", "#555a9e"];
+const NOMBRE_TIPO = { camion: "Camión", moto: "Moto", liviano: "Vehículo liviano" };
+const EMOJI_TIPO = { camion: "🚚", moto: "🏍️", liviano: "🚗" };
+const PRIORIDAD = { 3: "Urgente", 2: "Normal", 1: "Puede esperar" };
+
+let estado = { vehiculos: [], pedidos: [] };
+let resultado = null;
+let pestana = "pedidos";
+let marcaClic = null;
+let vehiculoActivoId = null;  
+let mostrarRutaDeVuelta = false; 
+
+window.seleccionarVehiculo = function(id) {
+    vehiculoActivoId = (vehiculoActivoId === id) ? null : id;
+    renderResultado();
+    dibujarMapa();
+};
+
+const mapa = L.map("mapa").setView([4.4389, -75.2322], 13);
+L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19, attribution: "© OpenStreetMap" }).addTo(mapa);
+const capaRutas = L.layerGroup().addTo(mapa);
+const capaPuntos = L.layerGroup().addTo(mapa);
+
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const colorDe = (vid) => COLORES[Math.max(0, estado.vehiculos.findIndex((v) => v.id === vid)) % COLORES.length];
+
+async function api(url, metodo = "GET", cuerpo) {
+  const r = await fetch(url, { method: metodo, headers: { "Content-Type": "application/json" }, body: cuerpo ? JSON.stringify(cuerpo) : undefined });
+  const d = await r.json();
+  if (!r.ok) throw new Error(d.error || "Ocurrió un error.");
+  return d;
+}
+function mostrarError(msg) { $("error").textContent = msg || ""; }
+
+function irA(nombre) {
+  pestana = nombre;
+  document.querySelectorAll("nav button").forEach((b) => b.classList.toggle("activa", b.dataset.tab === nombre));
+  document.querySelectorAll("section").forEach((s) => s.classList.toggle("activa", s.id === "tab-" + nombre));
+}
+document.querySelectorAll("nav button").forEach((b) => b.addEventListener("click", () => irA(b.dataset.tab)));
+
+mapa.on("click", (e) => {
+  const pref = pestana === "vehiculos" ? "v_" : pestana === "pedidos" ? "p_" : null;
+  if (!pref) return;
+  
+  $(pref + "lat").value = e.latlng.lat.toFixed(5);
+  $(pref + "lon").value = e.latlng.lng.toFixed(5);
+  
+  if (marcaClic) mapa.removeLayer(marcaClic);
+  
+  if (pestana === "vehiculos") {
+      const tipo = $("v_tipo").value;
+      const emoji = EMOJI_TIPO[tipo] || "🚗";
+      const iconoNuevo = L.divIcon({ 
+          className: "", 
+          html: `<div class="veh" style="background:#555; opacity:0.8; outline: 2px dashed #0b6e7f;">${emoji}</div>`, 
+          iconSize: [34, 34], 
+          iconAnchor: [17, 17] 
+      });
+      marcaClic = L.marker(e.latlng, { icon: iconoNuevo }).addTo(mapa);
+  } else {
+      const iconoNuevo = L.divIcon({ 
+          className: "", 
+          html: `<div class="pin" style="background:#555; opacity:0.8; outline: 2px dashed #0b6e7f;">+</div>`, 
+          iconSize: [26, 26], 
+          iconAnchor: [13, 13] 
+      });
+      marcaClic = L.marker(e.latlng, { icon: iconoNuevo }).addTo(mapa);
+  }
+});
+
+$("v_tipo").addEventListener("change", () => {
+  const base = { camion: [8000, 3.5, 2.5, 7], liviano: [700, 1.8, 1.7, 2.2], moto: [80, 0.5, 0.5, 0.6] }[$("v_tipo").value];
+  ["v_peso", "v_alto", "v_ancho", "v_profundo"].forEach((id, i) => { $(id).value = base[i]; });
+  
+  if (marcaClic && pestana === "vehiculos") {
+      const emoji = EMOJI_TIPO[$("v_tipo").value] || "🚗";
+      const iconoNuevo = L.divIcon({ 
+          className: "", 
+          html: `<div class="veh" style="background:#555; opacity:0.8; outline: 2px dashed #0b6e7f;">${emoji}</div>`, 
+          iconSize: [34, 34], 
+          iconAnchor: [17, 17] 
+      });
+      marcaClic.setIcon(iconoNuevo);
+  }
+});
+
+document.querySelectorAll("nav button").forEach((b) => {
+    b.addEventListener("click", () => {
+        if (marcaClic) {
+            mapa.removeLayer(marcaClic);
+            marcaClic = null;
+        }
+        irA(b.dataset.tab);
+    });
+});
+
+function popupPedido(p) {
+  return `<b>${esc(p.id)} · ${esc(p.cliente)}</b><br>Peso: ${p.peso} kg<br>Alto: ${p.alto} m · Ancho: ${p.ancho} m · Profundo: ${p.profundo} m<br>Prioridad: ${PRIORIDAD[p.prioridad]}`;
+}
+function popupVehiculo(v) {
+  const r = resultado && resultado.vehiculos.find((x) => x.id === v.id);
+  const carga = r ? `<br><b>Lleva ahora:</b> ${r.peso_cargado} kg en ${r.paradas.length} pedidos` : "";
+  return `<b>${esc(v.id)}</b><br>Tipo: ${NOMBRE_TIPO[v.tipo]}<br>Peso máximo: ${v.peso_max} kg<br>Alto: ${v.alto} m · Ancho: ${v.ancho} m · Profundo: ${v.profundo} m${carga}`;
+}
+
+function dibujarMapa() {
+  capaRutas.clearLayers();
+  capaPuntos.clearLayers();
+  const orden = {}, colorPedido = {};
+
+  if (resultado) {
+    resultado.vehiculos.forEach((r) => {
+      r.paradas.forEach((p) => { orden[p.id] = p.orden; colorPedido[p.id] = colorDe(r.id); });
+      
+      const mostrarRuta = (vehiculoActivoId === null) || (vehiculoActivoId === r.id);
+      
+      if (r.ruta.length && mostrarRuta) {
+        
+        const ultimaParada = r.paradas[r.paradas.length - 1]; 
+        
+        // 1. Encontrar el punto de la calle más cercano a la última entrega
+        let indiceCorteRuta = r.ruta.length - 1;
+        if (ultimaParada) {
+            let distanciaMin = Infinity;
+            r.ruta.forEach((coordCalle, i) => {
+                const dist = Math.pow(coordCalle[0] - ultimaParada.lat, 2) + Math.pow(coordCalle[1] - ultimaParada.lon, 2);
+                if (dist < distanciaMin) { 
+                    distanciaMin = dist; 
+                    indiceCorteRuta = i;
+                }
+            });
+        }
+
+        // 2. Determinar la ruta a dibujar
+        let rutaFinalADibujar;
+        if (mostrarRutaDeVuelta) {
+            // Si mostramos la vuelta, usamos la ruta COMPLETA para no dejar huecos
+            rutaFinalADibujar = r.ruta;
+        } else {
+            // Si solo es ida, cortamos en el punto más cercano a la última entrega
+            rutaFinalADibujar = r.ruta.slice(0, indiceCorteRuta + 1);
+        }
+
+        // 3. Dibujar la ruta (con un ligero suavizado para evitar que se vea tan "enredada")
+        L.polyline(rutaFinalADibujar, { 
+            color: colorDe(r.id), 
+            weight: 4, // Un poco más delgada para que los tramos dobles no se vean como un manchón
+            opacity: 0.85,
+            lineJoin: 'round' // Suaviza las esquinas
+        }).addTo(capaRutas);
+        
+        // 4. Dibujar las líneas punteadas hacia las entregas (el "camino final")
+        r.paradas.forEach((parada) => {
+            let puntoCalle = r.ruta[0];
+            let minDist = Infinity;
+            
+            rutaFinalADibujar.forEach((coord) => {
+                const d = Math.pow(coord[0] - parada.lat, 2) + Math.pow(coord[1] - parada.lon, 2);
+                if (d < minDist) { minDist = d; puntoCalle = coord; }
+            });
+            
+            L.polyline([puntoCalle, [parada.lat, parada.lon]], {
+                color: colorDe(r.id), weight: 3, dashArray: "5, 10", opacity: 0.9 
+            }).addTo(capaRutas);
+        });
+
+        // 5. Etiquetas de Inicio y Fin
+        if (ultimaParada) {
+            const htmlEntrega = `<div style="background:white; color:black; border-radius:4px; padding:2px 6px; font-weight:bold; font-size:11px; white-space:nowrap; border:2px solid ${colorDe(r.id)}; box-shadow: 0 1px 4px rgba(0,0,0,0.5); transform: translate(-50%, -100%); width: fit-content;">📦 Última entrega: ${r.id}</div>`;
+            const iconEntrega = L.divIcon({ className: "", html: htmlEntrega, iconSize: [0,0] });
+            L.marker([ultimaParada.lat, ultimaParada.lon], { icon: iconEntrega, zIndexOffset: 900 }).addTo(capaPuntos);
+        }
+        
+        if (mostrarRutaDeVuelta) {
+             const coordBodega = r.ruta[r.ruta.length - 1];
+             if(coordBodega) {
+                  const htmlRetorno = `<div style="background:#f0ad4e; color:white; border-radius:4px; padding:2px 6px; font-weight:bold; font-size:11px; white-space:nowrap; border:1px solid white; box-shadow: 0 1px 4px rgba(0,0,0,0.5); transform: translate(-50%, -100%); width: fit-content; margin-bottom: 25px;">🏁 Fin de jornada (Retorno)</div>`;
+                  const iconRetorno = L.divIcon({ className: "", html: htmlRetorno, iconSize: [0,0] });
+                  L.marker(coordBodega, { icon: iconRetorno, zIndexOffset: 950 }).addTo(capaPuntos);
+             }
+        }
+      }
+    });
+  }
+
+  const sinAsignar = new Set(resultado ? resultado.sin_asignar.map((x) => x.id) : []);
+  
+  estado.pedidos.forEach((p) => {
+    const color = colorPedido[p.id] || (sinAsignar.has(p.id) ? "#b00020" : "#5d6b75");
+    const texto = orden[p.id] !== undefined ? orden[p.id] : "•";
+    
+    const esDeEsteVehiculo = vehiculoActivoId === null || colorPedido[p.id] === colorDe(vehiculoActivoId);
+    let opacidad = 1;
+    if (vehiculoActivoId !== null && !esDeEsteVehiculo && !sinAsignar.has(p.id)) {
+      opacidad = 0.2;
+    }
+
+    const icono = L.divIcon({ className: "", html: `<div class="pin" style="background:${color}; opacity:${opacidad}">${texto}</div>`, iconSize: [26, 26], iconAnchor: [13, 13] });
+    L.marker([p.lat, p.lon], { icon: icono, title: p.cliente }).bindPopup(popupPedido(p)).addTo(capaPuntos);
+  });
+
+  estado.vehiculos.forEach((v) => {
+    const esActivo = (vehiculoActivoId === null) || (vehiculoActivoId === v.id);
+    const opacidad = (vehiculoActivoId !== null && !esActivo) ? 0.3 : 1;
+    
+    const tagInicio = esActivo ? `<div style="position:absolute; bottom:100%; left:50%; transform:translateX(-50%); margin-bottom:6px; background:${colorDe(v.id)}; color:white; font-size:11px; font-weight:bold; padding:2px 6px; border-radius:4px; white-space:nowrap; border:1px solid white; box-shadow: 0 1px 4px rgba(0,0,0,0.5);">🚩 Inicio: ${v.id}</div>` : "";
+    
+    const icono = L.divIcon({ className: "", html: `${tagInicio}<div class="veh" style="background:${colorDe(v.id)}; opacity:${opacidad}">${EMOJI_TIPO[v.tipo] || "🚗"}</div>`, iconSize: [34, 34], iconAnchor: [17, 17] });
+    L.marker([v.lat, v.lon], { icon: icono, title: v.id, zIndexOffset: 1000 }).bindPopup(() => popupVehiculo(v)).addTo(capaPuntos);
+  });
+}
+
+function renderPedidos() {
+  const filas = estado.pedidos.map((p) => `<tr>
+    <td>${esc(p.id)}</td><td>${esc(p.cliente)}</td><td class="num">${p.peso} kg</td>
+    <td>${PRIORIDAD[p.prioridad]}</td>
+    <td><button data-borrar-pedido="${esc(p.id)}" aria-label="Quitar ${esc(p.id)}">✕</button></td></tr>`).join("");
+  $("tablaPedidos").innerHTML = `<tr><th>Id</th><th>Cliente</th><th>Peso</th><th>Prioridad</th><th></th></tr>${filas}`;
+}
+function renderVehiculos() {
+  const filas = estado.vehiculos.map((v) => `<tr>
+    <td><span style="color:${colorDe(v.id)}">■</span> ${esc(v.id)}</td><td>${NOMBRE_TIPO[v.tipo]}</td>
+    <td class="num">${v.peso_max} kg</td><td class="num">${v.alto}×${v.ancho}×${v.profundo} m</td>
+    <td><button data-borrar-vehiculo="${esc(v.id)}" aria-label="Quitar ${esc(v.id)}">✕</button></td></tr>`).join("");
+  $("tablaVehiculos").innerHTML = `<tr><th>Id</th><th>Tipo</th><th>Peso máx.</th><th>Alto×ancho×prof.</th><th></th></tr>${filas}`;
+}
+function renderResultado() {
+  const cont = $("tab-resultado");
+  if (!resultado) { cont.innerHTML = '<p class="ayuda">Aún no hay rutas. Pulsa «Calcular rutas».</p>'; return; }
+  
+  let controles = `
+    <div style="margin-bottom: 12px; background: #fff; padding: 10px; border-radius: 6px; border: 1px solid var(--linea);">
+      <label for="filtro_rutas" style="font-weight: 600; color: var(--tinta); margin-bottom: 4px; display:block;">Ver ruta en el mapa:</label>
+      <select id="filtro_rutas" style="margin-bottom: 8px;">
+        <option value="todos">Todos los vehículos al mismo tiempo</option>
+        ${resultado.vehiculos.map(v => `<option value="${esc(v.id)}">Solo la ruta de: ${esc(v.id)}</option>`).join("")}
+      </select>
+      
+      <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 4px;">
+        <input type="checkbox" id="check_vuelta" ${mostrarRutaDeVuelta ? 'checked' : ''} style="width: auto;">
+        <label for="check_vuelta" style="color: var(--tinta); font-size: 13px; cursor: pointer; display: inline;">Mostrar también el trayecto de regreso a la bodega</label>
+      </div>
+      
+      <p class="ayuda" style="margin: 0;">(También puedes hacer clic en una tarjeta abajo para enfocar su ruta)</p>
+    </div>
+  `;
+
+  let html = resultado.vehiculos.map((r) => {
+    const paradas = r.paradas.length
+      ? `<ol>${r.paradas.map((p) => `<li>${esc(p.cliente)} <span class="meta">(${p.peso} kg)</span></li>`).join("")}</ol>`
+      : `<p class="meta">${esc(r.mensaje || "Sin pedidos asignados.")}</p>`;
+    const datos = r.paradas.length
+      ? `<div class="meta">Carga: ${r.peso_cargado} / ${r.peso_max} kg · ${r.distancia_km} km · unos ${r.tiempo_min} min</div>` : "";
+      
+    const sombraSeleccion = (vehiculoActivoId === r.id) ? 'box-shadow: 0 0 0 2px var(--acento); background:#fcfcfc;' : '';
+    
+    return `<div class="tarjeta" style="border-left-color:${colorDe(r.id)}; cursor: pointer; transition: all 0.2s; ${sombraSeleccion}" onclick="seleccionarVehiculo('${esc(r.id)}')">
+              <h3>${EMOJI_TIPO[r.tipo] || ""} ${esc(r.id)} · ${NOMBRE_TIPO[r.tipo]}</h3>${datos}${paradas}
+            </div>`;
+  }).join("");
+  
+  if (resultado.sin_asignar.length) {
+    html += `<div class="tarjeta" style="border-left-color:#b00020"><h3>Sin asignar</h3><ul>${resultado.sin_asignar.map((x) =>
+      `<li>${esc(x.cliente)}<br><span class="meta">${esc(x.motivo)}</span></li>`).join("")}</ul></div>`;
+  }
+  
+  cont.innerHTML = controles + html;
+
+  $("filtro_rutas").value = vehiculoActivoId || "todos";
+  $("filtro_rutas").addEventListener("change", (e) => {
+    vehiculoActivoId = e.target.value === "todos" ? null : e.target.value;
+    renderResultado(); 
+    dibujarMapa();
+  });
+  
+  $("check_vuelta").addEventListener("change", (e) => {
+      mostrarRutaDeVuelta = e.target.checked;
+      dibujarMapa();
+  });
+}
+function render() { renderPedidos(); renderVehiculos(); renderResultado(); dibujarMapa(); }
+
+async function cargar() {
+  estado = await api("/api/estado");
+  resultado = null;
+  render();
+}
+document.addEventListener("click", async (e) => {
+  const bp = e.target.closest("[data-borrar-pedido]");
+  const bv = e.target.closest("[data-borrar-vehiculo]");
+  try {
+    if (bp) { await api("/api/pedidos/" + encodeURIComponent(bp.dataset.borrarPedido), "DELETE"); await cargar(); }
+    if (bv) { await api("/api/vehiculos/" + encodeURIComponent(bv.dataset.borrarVehiculo), "DELETE"); await cargar(); }
+  } catch (err) { mostrarError(err.message); }
+});
+
+$("btnAgregarPedido").addEventListener("click", async () => {
+  mostrarError("");
+  try {
+    await api("/api/pedidos", "POST", {
+      cliente: $("p_cliente").value, peso: $("p_peso").value, prioridad: $("p_prioridad").value,
+      alto: $("p_alto").value, ancho: $("p_ancho").value, profundo: $("p_profundo").value,
+      lat: $("p_lat").value, lon: $("p_lon").value,
+    });
+    $("p_cliente").value = "";
+    await cargar();
+  } catch (err) { mostrarError(err.message); }
+});
+
+$("btnAgregarVehiculo").addEventListener("click", async () => {
+  mostrarError("");
+  try {
+    await api("/api/vehiculos", "POST", {
+      id: $("v_id").value, tipo: $("v_tipo").value, peso_max: $("v_peso").value,
+      alto: $("v_alto").value, ancho: $("v_ancho").value, profundo: $("v_profundo").value,
+      lat: $("v_lat").value, lon: $("v_lon").value,
+    });
+    $("v_id").value = "";
+    await cargar();
+  } catch (err) { mostrarError(err.message); }
+});
+
+$("btnCalcular").addEventListener("click", async () => {
+  mostrarError("");
+  const b = $("btnCalcular");
+  b.disabled = true; b.textContent = "Calculando…";
+  try {
+    resultado = await api("/api/planificar", "POST");
+    vehiculoActivoId = null;
+    render();
+    irA("resultado");
+  } catch (err) { mostrarError(err.message); }
+  b.disabled = false; b.textContent = "Calcular rutas";
+});
+
+$("btnReiniciar").addEventListener("click", async () => {
+  mostrarError("");
+  try { await api("/api/reiniciar", "POST"); await cargar(); } catch (err) { mostrarError(err.message); }
+});
+
+$("v_tipo").addEventListener("change", () => {
+  const base = { camion: [8000, 3.5, 2.5, 7], liviano: [700, 1.8, 1.7, 2.2], moto: [80, 0.5, 0.5, 0.6] }[$("v_tipo").value];
+  ["v_peso", "v_alto", "v_ancho", "v_profundo"].forEach((id, i) => { $(id).value = base[i]; });
+});
+
+cargar().catch((err) => mostrarError(err.message));
+</script>
+</body>
+</html>
