@@ -1,16 +1,16 @@
 ﻿orden_cargue;id;empaque;elemento;alto_cm;ancho_cm;profundidad_cm;peso_kg;volumen_m3;cliente;comuna;parada;notas
-1;212;Tubo;Documentos y sobres;7.0;15.9;32.8;1.83;0.0037;Calambeo;2 Calambeo;5;-
-2;211;Tubo;Documentos y sobres;5.7;22.3;24.8;0.35;0.0032;Calambeo;2 Calambeo;5;-
-3;214;Sobre;Documentos y sobres;3.1;27.8;28.7;1.01;0.0025;Calambeo;2 Calambeo;5;-
-4;203;Caja;Electrónico pequeño;11.9;12.6;21.1;0.53;0.0032;Calambeo;2 Calambeo;5;FRÁGIL
-5;210;Tubo;Documentos y sobres;6.1;29.7;30.3;1.07;0.0055;Ancón;2 Calambeo;4;-
-6;215;Tubo;Documentos y sobres;7.3;17.5;31.9;1.3;0.0041;Ancón;2 Calambeo;4;-
-7;213;Caja;Electrónico pequeño;4.1;8.1;19.5;1.91;0.0006;Ancón;2 Calambeo;4;FRÁGIL
-8;205;Sobre;Documentos y sobres;5.8;28.7;21.1;1.41;0.0035;La Pola;1 Centro;3;-
-9;209;Caja;Electrónico pequeño;10.2;14.5;21.4;1.04;0.0032;La Pola;1 Centro;3;FRÁGIL
-10;207;Caja;Electrónico pequeño;10.5;15.8;11.9;1.34;0.002;La Pola;1 Centro;3;FRÁGIL
-11;208;Caja;Electrónico pequeño;9.3;9.5;22.2;1.7;0.002;La Pola;1 Centro;3;FRÁGIL
-12;206;Sobre;Documentos y sobres;7.7;21.0;24.6;1.95;0.004;Cádiz;3 San Simón;2;-
-13;204;Sobre;Documentos y sobres;6.2;19.8;22.4;1.1;0.0027;Cádiz;3 San Simón;2;-
-14;202;Caja;Electrónico pequeño;5.9;10.6;18.3;0.45;0.0011;Mirolindo;9 Picaleña-Mirolindo;1;FRÁGIL
-15;201;Caja;Electrónico pequeño;9.9;8.5;10.3;2.0;0.0009;Mirolindo;9 Picaleña-Mirolindo;1;FRÁGIL
+1;214;Sobre;Documentos y sobres;5.8;18.8;32.7;2.0;0.0036;Jordán 9.a etapa;5 Jordán;5;-
+2;212;Bolsa;Ropa (bolsa pequeña);9.7;24.5;31.1;1.7;0.0074;La Pola;1 Centro;4;-
+3;210;Bolsa;Medicamentos;7.3;14.6;10.1;0.79;0.0011;La Pola;1 Centro;4;Este lado arriba
+4;209;Bolsa;Ropa (bolsa pequeña);11.3;22.2;32.3;0.82;0.0081;Ancón;2 Calambeo;3;-
+5;205;Bolsa;Medicamentos;7.1;14.8;17.4;1.47;0.0018;Ancón;2 Calambeo;3;Este lado arriba
+6;207;Sobre;Documentos y sobres;2.7;16.2;31.3;1.61;0.0014;Ancón;2 Calambeo;3;-
+7;204;Caja;Electrónico pequeño;5.5;10.1;17.8;0.35;0.001;Ancón;2 Calambeo;3;FRÁGIL
+8;203;Caja;Medicamentos;10.1;9.6;13.6;0.63;0.0013;Calambeo;2 Calambeo;2;Este lado arriba
+9;201;Caja;Electrónico pequeño;5.7;12.7;23.0;1.98;0.0017;Calambeo;2 Calambeo;2;FRÁGIL
+10;213;Bolsa;Ropa (bolsa pequeña);10.9;25.8;26.8;2.01;0.0075;Mirolindo;9 Picaleña-Mirolindo;1;-
+11;206;Sobre;Documentos y sobres;6.0;22.3;23.3;0.83;0.0031;Mirolindo;9 Picaleña-Mirolindo;1;-
+12;202;Sobre;Documentos y sobres;3.8;25.0;31.0;1.45;0.0029;Mirolindo;9 Picaleña-Mirolindo;1;-
+13;211;Tubo;Documentos y sobres;4.3;20.3;23.8;0.51;0.0021;Mirolindo;9 Picaleña-Mirolindo;1;-
+14;215;Tubo;Documentos y sobres;3.7;15.2;21.0;0.46;0.0012;Mirolindo;9 Picaleña-Mirolindo;1;-
+15;208;Caja;Electrónico pequeño;11.1;16.2;13.0;1.29;0.0023;Mirolindo;9 Picaleña-Mirolindo;1;FRÁGIL
