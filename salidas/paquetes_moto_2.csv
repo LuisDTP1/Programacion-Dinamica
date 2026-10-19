@@ -1,0 +1,16 @@
+﻿orden_cargue;id;empaque;elemento;alto_cm;ancho_cm;profundidad_cm;peso_kg;volumen_m3;cliente;comuna;parada;notas
+1;225;Bolsa;Ropa (bolsa pequeña);10.3;25.7;25.5;1.54;0.0068;Estadio Manuel Murillo Toro;10 Estadio;5;-
+2;228;Caja;Electrónico pequeño;11.9;13.9;20.2;1.39;0.0033;Estadio Manuel Murillo Toro;10 Estadio;5;FRÁGIL
+3;219;Caja;Electrónico pequeño;5.6;11.4;23.1;1.09;0.0015;Estadio Manuel Murillo Toro;10 Estadio;5;FRÁGIL
+4;226;Caja;Medicamentos;8.0;10.2;14.2;1.0;0.0012;Terminal de Transportes;10 Estadio;4;Este lado arriba
+5;218;Caja;Electrónico pequeño;6.3;8.5;13.8;0.84;0.0007;Terminal de Transportes;10 Estadio;4;FRÁGIL
+6;223;Sobre;Documentos y sobres;5.6;25.4;29.4;1.43;0.0042;Ricaurte;12 Ricaurte;3;-
+7;220;Tubo;Documentos y sobres;7.8;16.9;30.7;0.36;0.004;Centro - Plaza de Bolívar;1 Centro;2;-
+8;221;Tubo;Documentos y sobres;3.8;15.7;28.2;0.21;0.0017;Centro - Plaza de Bolívar;1 Centro;2;-
+9;227;Caja;Electrónico pequeño;7.4;15.7;22.4;1.45;0.0026;Centro - Plaza de Bolívar;1 Centro;2;FRÁGIL
+10;230;Caja;Electrónico pequeño;11.7;9.2;20.3;0.36;0.0022;Centro - Plaza de Bolívar;1 Centro;2;FRÁGIL
+11;216;Caja;Electrónico pequeño;5.7;9.4;21.4;0.95;0.0011;Centro - Plaza de Bolívar;1 Centro;2;FRÁGIL
+12;222;Bolsa;Ropa (bolsa pequeña);10.3;23.6;29.1;2.3;0.0071;Belén;1 Centro;1;-
+13;217;Tubo;Documentos y sobres;5.3;26.7;25.1;1.84;0.0036;Belén;1 Centro;1;-
+14;224;Tubo;Documentos y sobres;6.0;17.6;29.4;1.76;0.0031;Belén;1 Centro;1;-
+15;229;Caja;Electrónico pequeño;7.8;8.8;18.2;1.81;0.0012;Belén;1 Centro;1;FRÁGIL

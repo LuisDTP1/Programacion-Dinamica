@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+
+# Caché de la red de calles descargada con --osm
+entregas/datos/ibague_calles.graphml

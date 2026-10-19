@@ -1,0 +1,421 @@
+﻿desde;hasta;km;min_camion;min_moto;vias
+Centro de Distribución Mirolindo;Aeropuerto Perales;3.95;4.7;3.8;Vía a Bogotá
+Centro de Distribución Mirolindo;Ambalá;11.09;23.4;18.7;Carrera 5 -> Calle 103 - Mirolindo -> Vía El Salado -> Avenida Ambalá
+Centro de Distribución Mirolindo;Ancón;14.04;29.8;23.8;Carrera 5 -> Carrera 4D -> Calle 19 -> Vía Ancón
+Centro de Distribución Mirolindo;Belén;11.74;22.0;17.6;Carrera 5
+Centro de Distribución Mirolindo;Boquerón;14.59;31.8;25.5;Calle 145 - Picaleña -> Avenida Ferrocarril - Picaleña -> Avenida Ferrocarril -> Calle 25 Sur -> Carrera 8 Sur - Boquerón
+Centro de Distribución Mirolindo;Calambeo;12.82;26.4;21.1;Carrera 5 -> Carrera 4D -> Calle 19
+Centro de Distribución Mirolindo;Centro - Plaza de Bolívar;12.58;23.6;18.9;Carrera 5
+Centro de Distribución Mirolindo;Ciudadela Simón Bolívar;5.66;10.6;8.5;Carrera 5 -> Calle 103 - Mirolindo
+Centro de Distribución Mirolindo;Cádiz;10.01;18.8;15.0;Carrera 5
+Centro de Distribución Mirolindo;El Salado;8.74;19.0;15.2;Carrera 5 -> Calle 103 - Mirolindo -> Vía El Salado
+Centro de Distribución Mirolindo;Estadio Manuel Murillo Toro;9.78;20.0;16.0;Calle 145 - Picaleña -> Avenida Ferrocarril - Picaleña -> Avenida Ferrocarril
+Centro de Distribución Mirolindo;Hacienda Santa Cruz;2.08;2.5;2.0;Vía Bogotá - Santa Cruz
+Centro de Distribución Mirolindo;Jardín Santander;7.4;15.7;12.6;Carrera 5 -> Calle 69
+Centro de Distribución Mirolindo;La Pola;13.31;25.6;20.5;Carrera 5 -> Calle 10
+Centro de Distribución Mirolindo;Mirolindo;1.25;2.3;1.9;Carrera 5
+Centro de Distribución Mirolindo;Picaleña;1.97;5.4;4.3;Calle 145 - Picaleña
+Centro de Distribución Mirolindo;Ricaurte;14.16;29.5;23.6;Calle 145 - Picaleña -> Avenida Ferrocarril - Picaleña -> Avenida Ferrocarril -> Calle 21 - Ricaurte
+Centro de Distribución Mirolindo;Santa Helena (U. del Tolima);8.45;17.5;14.0;Calle 145 - Picaleña -> Avenida Ferrocarril - Picaleña
+Centro de Distribución Mirolindo;Terminal de Transportes;11.15;23.8;19.0;Calle 145 - Picaleña -> Avenida Ferrocarril - Picaleña -> Avenida Ferrocarril -> Carrera 4 Estadio
+Centro de Distribución Mirolindo;Vergel;7.54;14.1;11.3;Carrera 5 -> Calle 103 - Mirolindo -> Avenida Guabinal
+Aeropuerto Perales;Centro de Distribución Mirolindo;3.95;4.7;3.8;Vía a Bogotá
+Aeropuerto Perales;Ambalá;15.03;28.1;22.5;Vía a Bogotá -> Carrera 5 -> Calle 103 - Mirolindo -> Vía El Salado -> Avenida Ambalá
+Aeropuerto Perales;Ancón;17.99;34.5;27.6;Vía a Bogotá -> Carrera 5 -> Carrera 4D -> Calle 19 -> Vía Ancón
+Aeropuerto Perales;Belén;15.69;26.8;21.4;Vía a Bogotá -> Carrera 5
+Aeropuerto Perales;Boquerón;18.54;36.5;29.2;Vía a Bogotá -> Calle 145 - Picaleña -> Avenida Ferrocarril - Picaleña -> Avenida Ferrocarril -> Calle 25 Sur -> Carrera 8 Sur - Boquerón
+Aeropuerto Perales;Calambeo;16.76;31.2;24.9;Vía a Bogotá -> Carrera 5 -> Carrera 4D -> Calle 19
+Aeropuerto Perales;Centro - Plaza de Bolívar;16.53;28.3;22.7;Vía a Bogotá -> Carrera 5
+Aeropuerto Perales;Ciudadela Simón Bolívar;9.61;15.4;12.3;Vía a Bogotá -> Carrera 5 -> Calle 103 - Mirolindo
+Aeropuerto Perales;Cádiz;13.96;23.5;18.8;Vía a Bogotá -> Carrera 5
+Aeropuerto Perales;El Salado;12.68;23.7;19.0;Vía a Bogotá -> Carrera 5 -> Calle 103 - Mirolindo -> Vía El Salado
+Aeropuerto Perales;Estadio Manuel Murillo Toro;13.72;24.7;19.8;Vía a Bogotá -> Calle 145 - Picaleña -> Avenida Ferrocarril - Picaleña -> Avenida Ferrocarril
+Aeropuerto Perales;Hacienda Santa Cruz;6.03;7.2;5.8;Vía a Bogotá -> Vía Bogotá - Santa Cruz
+Aeropuerto Perales;Jardín Santander;11.35;20.4;16.3;Vía a Bogotá -> Carrera 5 -> Calle 69
+Aeropuerto Perales;La Pola;17.26;30.3;24.2;Vía a Bogotá -> Carrera 5 -> Calle 10
+Aeropuerto Perales;Mirolindo;5.19;7.1;5.7;Vía a Bogotá -> Carrera 5
+Aeropuerto Perales;Picaleña;5.92;10.1;8.1;Vía a Bogotá -> Calle 145 - Picaleña
+Aeropuerto Perales;Ricaurte;18.1;34.2;27.4;Vía a Bogotá -> Calle 145 - Picaleña -> Avenida Ferrocarril - Picaleña -> Avenida Ferrocarril -> Calle 21 - Ricaurte
+Aeropuerto Perales;Santa Helena (U. del Tolima);12.4;22.3;17.8;Vía a Bogotá -> Calle 145 - Picaleña -> Avenida Ferrocarril - Picaleña
+Aeropuerto Perales;Terminal de Transportes;15.1;28.5;22.8;Vía a Bogotá -> Calle 145 - Picaleña -> Avenida Ferrocarril - Picaleña -> Avenida Ferrocarril -> Carrera 4 Estadio
+Aeropuerto Perales;Vergel;11.49;18.9;15.1;Vía a Bogotá -> Carrera 5 -> Calle 103 - Mirolindo -> Avenida Guabinal
+Ambalá;Centro de Distribución Mirolindo;11.09;23.4;18.7;Avenida Ambalá -> Vía El Salado -> Calle 103 - Mirolindo -> Carrera 5
+Ambalá;Aeropuerto Perales;15.03;28.1;22.5;Avenida Ambalá -> Vía El Salado -> Calle 103 - Mirolindo -> Carrera 5 -> Vía a Bogotá
+Ambalá;Ancón;7.55;16.8;13.4;Avenida Ambalá -> Calle 19 -> Vía Ancón
+Ambalá;Belén;6.37;12.9;10.3;Avenida Ambalá -> Calle 37 -> Carrera 5
+Ambalá;Boquerón;12.51;24.3;19.5;Avenida Ambalá -> Calle 37 -> Carrera 5 -> Avenida Ferrocarril -> Calle 21 - Ricaurte -> Vía a Armenia
+Ambalá;Calambeo;6.32;13.5;10.8;Avenida Ambalá -> Calle 19
+Ambalá;Centro - Plaza de Bolívar;7.2;14.4;11.6;Avenida Ambalá -> Calle 37 -> Carrera 5
+Ambalá;Ciudadela Simón Bolívar;5.43;12.8;10.2;Avenida Ambalá -> Vía El Salado
+Ambalá;Cádiz;4.63;9.6;7.7;Avenida Ambalá -> Calle 37 -> Carrera 5
+Ambalá;El Salado;2.35;4.4;3.5;Avenida Ambalá
+Ambalá;Estadio Manuel Murillo Toro;6.06;13.5;10.8;Avenida Ambalá -> Calle 37 -> Carrera 5 -> Carrera 4 Estadio
+Ambalá;Hacienda Santa Cruz;13.17;25.9;20.7;Avenida Ambalá -> Vía El Salado -> Calle 103 - Mirolindo -> Carrera 5 -> Vía Bogotá - Santa Cruz
+Ambalá;Jardín Santander;7.31;16.4;13.1;Avenida Ambalá -> Calle 42 - Jordán -> Avenida Guabinal -> Carrera 12 - Jardín
+Ambalá;La Pola;7.93;16.4;13.1;Avenida Ambalá -> Calle 37 -> Carrera 5 -> Calle 10
+Ambalá;Mirolindo;9.84;21.1;16.9;Avenida Ambalá -> Vía El Salado -> Calle 103 - Mirolindo
+Ambalá;Picaleña;11.7;24.4;19.5;Avenida Ambalá -> Calle 37 -> Calle 37 - Santa Helena -> Avenida Ferrocarril - Picaleña
+Ambalá;Ricaurte;10.54;22.0;17.6;Avenida Ambalá -> Calle 37 -> Carrera 5 -> Avenida Ferrocarril -> Calle 21 - Ricaurte
+Ambalá;Santa Helena (U. del Tolima);5.21;12.2;9.8;Avenida Ambalá -> Calle 37 -> Calle 37 - Santa Helena
+Ambalá;Terminal de Transportes;7.68;16.5;13.2;Avenida Ambalá -> Calle 37 -> Carrera 5 -> Calle 19
+Ambalá;Vergel;6.07;13.0;10.4;Avenida Ambalá -> Calle 42 - Jordán -> Avenida Guabinal
+Ancón;Centro de Distribución Mirolindo;14.04;29.8;23.8;Vía Ancón -> Calle 19 -> Carrera 4D -> Carrera 5
+Ancón;Aeropuerto Perales;17.99;34.5;27.6;Vía Ancón -> Calle 19 -> Carrera 4D -> Carrera 5 -> Vía a Bogotá
+Ancón;Ambalá;7.55;16.8;13.4;Vía Ancón -> Calle 19 -> Avenida Ambalá
+Ancón;Belén;3.23;8.1;6.5;Carrera 2 - Ancón -> Calle 10 -> Carrera 5
+Ancón;Boquerón;5.71;12.6;10.0;Carrera 2 - Ancón -> Avenida Combeima -> Vía a Armenia
+Ancón;Calambeo;1.23;3.3;2.7;Vía Ancón
+Ancón;Centro - Plaza de Bolívar;2.39;6.5;5.2;Carrera 2 - Ancón -> Calle 10
+Ancón;Ciudadela Simón Bolívar;10.83;24.6;19.7;Vía Ancón -> Calle 19 -> Avenida Ambalá -> Calle 42 - Jordán -> Avenida Guabinal
+Ancón;Cádiz;4.03;11.0;8.8;Vía Ancón -> Calle 19 -> Carrera 4D
+Ancón;El Salado;9.9;21.2;17.0;Vía Ancón -> Calle 19 -> Avenida Ambalá
+Ancón;Estadio Manuel Murillo Toro;5.46;14.9;11.9;Vía Ancón -> Calle 19 -> Carrera 4D -> Carrera 4 Estadio
+Ancón;Hacienda Santa Cruz;16.13;32.3;25.8;Vía Ancón -> Calle 19 -> Carrera 4D -> Carrera 5 -> Vía Bogotá - Santa Cruz
+Ancón;Jardín Santander;10.2;24.5;19.6;Vía Ancón -> Calle 19 -> Avenida Ambalá -> Calle 42 - Jordán -> Avenida Guabinal -> Carrera 12 - Jardín
+Ancón;La Pola;1.66;4.5;3.6;Carrera 2 - Ancón
+Ancón;Mirolindo;12.8;27.4;21.9;Vía Ancón -> Calle 19 -> Carrera 4D -> Carrera 5
+Ancón;Picaleña;13.27;29.5;23.6;Vía Ancón -> Calle 19 -> Carrera 4D -> Carrera 4 Estadio -> Avenida Ferrocarril -> Avenida Ferrocarril - Picaleña
+Ancón;Ricaurte;3.74;10.2;8.2;Carrera 2 - Ancón -> Avenida Combeima
+Ancón;Santa Helena (U. del Tolima);6.78;17.4;13.9;Vía Ancón -> Calle 19 -> Carrera 4D -> Carrera 4 Estadio -> Avenida Ferrocarril
+Ancón;Terminal de Transportes;4.54;11.7;9.3;Carrera 2 - Ancón -> Calle 10 -> Carrera 5 -> Calle 19
+Ancón;Vergel;8.95;21.1;16.9;Vía Ancón -> Calle 19 -> Avenida Ambalá -> Calle 42 - Jordán -> Avenida Guabinal
+Belén;Centro de Distribución Mirolindo;11.74;22.0;17.6;Carrera 5
+Belén;Aeropuerto Perales;15.69;26.8;21.4;Carrera 5 -> Vía a Bogotá
+Belén;Ambalá;6.37;12.9;10.3;Carrera 5 -> Calle 37 -> Avenida Ambalá
+Belén;Ancón;3.23;8.1;6.5;Carrera 5 -> Calle 10 -> Carrera 2 - Ancón
+Belén;Boquerón;6.15;11.5;9.2;Carrera 5 -> Avenida Ferrocarril -> Calle 21 - Ricaurte -> Vía a Armenia
+Belén;Calambeo;2.24;5.4;4.3;Carrera 5 -> Carrera 1 - Calambeo
+Belén;Centro - Plaza de Bolívar;0.84;1.6;1.3;Carrera 5
+Belén;Ciudadela Simón Bolívar;9.63;18.1;14.4;Carrera 5 -> Calle 60 -> Avenida Guabinal
+Belén;Cádiz;1.73;3.2;2.6;Carrera 5
+Belén;El Salado;8.71;17.3;13.8;Carrera 5 -> Calle 37 -> Avenida Ambalá
+Belén;Estadio Manuel Murillo Toro;3.16;7.1;5.7;Carrera 5 -> Carrera 4 Estadio
+Belén;Hacienda Santa Cruz;13.83;24.5;19.6;Carrera 5 -> Vía Bogotá - Santa Cruz
+Belén;Jardín Santander;8.99;17.9;14.3;Carrera 5 -> Calle 60 -> Avenida Guabinal -> Carrera 12 - Jardín
+Belén;La Pola;1.57;3.6;2.8;Carrera 5 -> Calle 10
+Belén;Mirolindo;10.5;19.7;15.7;Carrera 5
+Belén;Picaleña;10.97;21.8;17.4;Carrera 5 -> Carrera 4 Estadio -> Avenida Ferrocarril -> Avenida Ferrocarril - Picaleña
+Belén;Ricaurte;4.17;9.1;7.3;Carrera 5 -> Avenida Ferrocarril -> Calle 21 - Ricaurte
+Belén;Santa Helena (U. del Tolima);4.48;9.6;7.7;Carrera 5 -> Carrera 4 Estadio -> Avenida Ferrocarril
+Belén;Terminal de Transportes;1.32;3.6;2.9;Calle 19
+Belén;Vergel;7.74;14.5;11.6;Carrera 5 -> Calle 60 -> Avenida Guabinal
+Boquerón;Centro de Distribución Mirolindo;14.59;31.8;25.5;Carrera 8 Sur - Boquerón -> Calle 25 Sur -> Avenida Ferrocarril -> Avenida Ferrocarril - Picaleña -> Calle 145 - Picaleña
+Boquerón;Aeropuerto Perales;18.54;36.5;29.2;Carrera 8 Sur - Boquerón -> Calle 25 Sur -> Avenida Ferrocarril -> Avenida Ferrocarril - Picaleña -> Calle 145 - Picaleña -> Vía a Bogotá
+Boquerón;Ambalá;12.51;24.3;19.5;Vía a Armenia -> Calle 21 - Ricaurte -> Avenida Ferrocarril -> Carrera 5 -> Calle 37 -> Avenida Ambalá
+Boquerón;Ancón;5.71;12.6;10.0;Vía a Armenia -> Avenida Combeima -> Carrera 2 - Ancón
+Boquerón;Belén;6.15;11.5;9.2;Vía a Armenia -> Calle 21 - Ricaurte -> Avenida Ferrocarril -> Carrera 5
+Boquerón;Calambeo;6.71;13.7;11.0;Vía a Armenia -> Calle 21 - Ricaurte -> Avenida Ferrocarril -> Carrera 1 - Calambeo
+Boquerón;Centro - Plaza de Bolívar;5.31;9.9;7.9;Vía a Armenia -> Calle 21 - Ricaurte -> Avenida Ferrocarril
+Boquerón;Ciudadela Simón Bolívar;15.77;29.5;23.6;Vía a Armenia -> Calle 21 - Ricaurte -> Avenida Ferrocarril -> Carrera 5 -> Calle 60 -> Avenida Guabinal
+Boquerón;Cádiz;7.88;14.7;11.8;Vía a Armenia -> Calle 21 - Ricaurte -> Avenida Ferrocarril -> Carrera 5
+Boquerón;El Salado;14.86;28.7;23.0;Vía a Armenia -> Calle 21 - Ricaurte -> Avenida Ferrocarril -> Carrera 5 -> Calle 37 -> Avenida Ambalá
+Boquerón;Estadio Manuel Murillo Toro;4.81;11.8;9.4;Carrera 8 Sur - Boquerón -> Calle 25 Sur -> Avenida Ferrocarril
+Boquerón;Hacienda Santa Cruz;14.66;32.0;25.6;Carrera 8 Sur - Boquerón -> Calle 25 Sur -> Avenida Ferrocarril -> Avenida Ferrocarril - Picaleña -> Vía Picaleña
+Boquerón;Jardín Santander;15.14;29.4;23.5;Vía a Armenia -> Calle 21 - Ricaurte -> Avenida Ferrocarril -> Carrera 5 -> Calle 60 -> Avenida Guabinal -> Carrera 12 - Jardín
+Boquerón;La Pola;4.05;8.0;6.4;Vía a Armenia -> Avenida Combeima
+Boquerón;Mirolindo;14.55;30.1;24.0;Carrera 8 Sur - Boquerón -> Calle 25 Sur -> Avenida Ferrocarril -> Avenida Ferrocarril - Picaleña -> Avenida Mirolindo
+Boquerón;Picaleña;12.62;26.4;21.2;Carrera 8 Sur - Boquerón -> Calle 25 Sur -> Avenida Ferrocarril -> Avenida Ferrocarril - Picaleña
+Boquerón;Ricaurte;1.97;2.4;1.9;Vía a Armenia
+Boquerón;Santa Helena (U. del Tolima);6.13;14.3;11.4;Carrera 8 Sur - Boquerón -> Calle 25 Sur -> Avenida Ferrocarril
+Boquerón;Terminal de Transportes;4.39;8.2;6.5;Vía a Armenia -> Calle 21 - Ricaurte -> Avenida Ferrocarril
+Boquerón;Vergel;13.89;26.0;20.8;Vía a Armenia -> Calle 21 - Ricaurte -> Avenida Ferrocarril -> Carrera 5 -> Calle 60 -> Avenida Guabinal
+Calambeo;Centro de Distribución Mirolindo;12.82;26.4;21.1;Calle 19 -> Carrera 4D -> Carrera 5
+Calambeo;Aeropuerto Perales;16.76;31.2;24.9;Calle 19 -> Carrera 4D -> Carrera 5 -> Vía a Bogotá
+Calambeo;Ambalá;6.32;13.5;10.8;Calle 19 -> Avenida Ambalá
+Calambeo;Ancón;1.23;3.3;2.7;Vía Ancón
+Calambeo;Belén;2.24;5.4;4.3;Carrera 1 - Calambeo -> Carrera 5
+Calambeo;Boquerón;6.71;13.7;11.0;Carrera 1 - Calambeo -> Avenida Ferrocarril -> Calle 21 - Ricaurte -> Vía a Armenia
+Calambeo;Centro - Plaza de Bolívar;1.4;3.8;3.1;Carrera 1 - Calambeo
+Calambeo;Ciudadela Simón Bolívar;9.61;21.3;17.0;Calle 19 -> Avenida Ambalá -> Calle 42 - Jordán -> Avenida Guabinal
+Calambeo;Cádiz;2.8;7.6;6.1;Calle 19 -> Carrera 4D
+Calambeo;El Salado;8.67;17.9;14.3;Calle 19 -> Avenida Ambalá
+Calambeo;Estadio Manuel Murillo Toro;4.23;11.5;9.2;Calle 19 -> Carrera 4D -> Carrera 4 Estadio
+Calambeo;Hacienda Santa Cruz;14.9;28.9;23.1;Calle 19 -> Carrera 4D -> Carrera 5 -> Vía Bogotá - Santa Cruz
+Calambeo;Jardín Santander;8.97;21.1;16.9;Calle 19 -> Avenida Ambalá -> Calle 42 - Jordán -> Avenida Guabinal -> Carrera 12 - Jardín
+Calambeo;La Pola;2.13;5.8;4.6;Carrera 1 - Calambeo -> Calle 10
+Calambeo;Mirolindo;11.57;24.1;19.3;Calle 19 -> Carrera 4D -> Carrera 5
+Calambeo;Picaleña;12.04;26.2;20.9;Calle 19 -> Carrera 4D -> Carrera 4 Estadio -> Avenida Ferrocarril -> Avenida Ferrocarril - Picaleña
+Calambeo;Ricaurte;4.73;11.3;9.1;Carrera 1 - Calambeo -> Avenida Ferrocarril -> Calle 21 - Ricaurte
+Calambeo;Santa Helena (U. del Tolima);5.56;14.0;11.2;Calle 19 -> Carrera 4D -> Carrera 4 Estadio -> Avenida Ferrocarril
+Calambeo;Terminal de Transportes;3.55;9.0;7.2;Carrera 1 - Calambeo -> Carrera 5 -> Calle 19
+Calambeo;Vergel;7.72;17.7;14.2;Calle 19 -> Avenida Ambalá -> Calle 42 - Jordán -> Avenida Guabinal
+Centro - Plaza de Bolívar;Centro de Distribución Mirolindo;12.58;23.6;18.9;Carrera 5
+Centro - Plaza de Bolívar;Aeropuerto Perales;16.53;28.3;22.7;Carrera 5 -> Vía a Bogotá
+Centro - Plaza de Bolívar;Ambalá;7.2;14.4;11.6;Carrera 5 -> Calle 37 -> Avenida Ambalá
+Centro - Plaza de Bolívar;Ancón;2.39;6.5;5.2;Calle 10 -> Carrera 2 - Ancón
+Centro - Plaza de Bolívar;Belén;0.84;1.6;1.3;Carrera 5
+Centro - Plaza de Bolívar;Boquerón;5.31;9.9;7.9;Avenida Ferrocarril -> Calle 21 - Ricaurte -> Vía a Armenia
+Centro - Plaza de Bolívar;Calambeo;1.4;3.8;3.1;Carrera 1 - Calambeo
+Centro - Plaza de Bolívar;Ciudadela Simón Bolívar;10.47;19.6;15.7;Carrera 5 -> Calle 60 -> Avenida Guabinal
+Centro - Plaza de Bolívar;Cádiz;2.57;4.8;3.9;Carrera 5
+Centro - Plaza de Bolívar;El Salado;9.55;18.8;15.1;Carrera 5 -> Calle 37 -> Avenida Ambalá
+Centro - Plaza de Bolívar;Estadio Manuel Murillo Toro;4.0;8.7;7.0;Carrera 5 -> Carrera 4 Estadio
+Centro - Plaza de Bolívar;Hacienda Santa Cruz;14.66;26.1;20.9;Carrera 5 -> Vía Bogotá - Santa Cruz
+Centro - Plaza de Bolívar;Jardín Santander;9.83;19.5;15.6;Carrera 5 -> Calle 60 -> Avenida Guabinal -> Carrera 12 - Jardín
+Centro - Plaza de Bolívar;La Pola;0.73;2.0;1.6;Calle 10
+Centro - Plaza de Bolívar;Mirolindo;11.33;21.3;17.0;Carrera 5
+Centro - Plaza de Bolívar;Picaleña;11.81;23.4;18.7;Carrera 5 -> Carrera 4 Estadio -> Avenida Ferrocarril -> Avenida Ferrocarril - Picaleña
+Centro - Plaza de Bolívar;Ricaurte;3.33;7.5;6.0;Avenida Ferrocarril -> Calle 21 - Ricaurte
+Centro - Plaza de Bolívar;Santa Helena (U. del Tolima);5.32;11.2;9.0;Carrera 5 -> Carrera 4 Estadio -> Avenida Ferrocarril
+Centro - Plaza de Bolívar;Terminal de Transportes;2.16;5.2;4.1;Carrera 5 -> Calle 19
+Centro - Plaza de Bolívar;Vergel;8.58;16.1;12.9;Carrera 5 -> Calle 60 -> Avenida Guabinal
+Ciudadela Simón Bolívar;Centro de Distribución Mirolindo;5.66;10.6;8.5;Calle 103 - Mirolindo -> Carrera 5
+Ciudadela Simón Bolívar;Aeropuerto Perales;9.61;15.4;12.3;Calle 103 - Mirolindo -> Carrera 5 -> Vía a Bogotá
+Ciudadela Simón Bolívar;Ambalá;5.43;12.8;10.2;Vía El Salado -> Avenida Ambalá
+Ciudadela Simón Bolívar;Ancón;10.83;24.6;19.7;Avenida Guabinal -> Calle 42 - Jordán -> Avenida Ambalá -> Calle 19 -> Vía Ancón
+Ciudadela Simón Bolívar;Belén;9.63;18.1;14.4;Avenida Guabinal -> Calle 60 -> Carrera 5
+Ciudadela Simón Bolívar;Boquerón;15.77;29.5;23.6;Avenida Guabinal -> Calle 60 -> Carrera 5 -> Avenida Ferrocarril -> Calle 21 - Ricaurte -> Vía a Armenia
+Ciudadela Simón Bolívar;Calambeo;9.61;21.3;17.0;Avenida Guabinal -> Calle 42 - Jordán -> Avenida Ambalá -> Calle 19
+Ciudadela Simón Bolívar;Centro - Plaza de Bolívar;10.47;19.6;15.7;Avenida Guabinal -> Calle 60 -> Carrera 5
+Ciudadela Simón Bolívar;Cádiz;7.9;14.8;11.8;Avenida Guabinal -> Calle 60 -> Carrera 5
+Ciudadela Simón Bolívar;El Salado;3.08;8.4;6.7;Vía El Salado
+Ciudadela Simón Bolívar;Estadio Manuel Murillo Toro;9.32;18.7;15.0;Avenida Guabinal -> Calle 60 -> Carrera 5 -> Carrera 4 Estadio
+Ciudadela Simón Bolívar;Hacienda Santa Cruz;7.74;13.1;10.5;Calle 103 - Mirolindo -> Carrera 5 -> Vía Bogotá - Santa Cruz
+Ciudadela Simón Bolívar;Jardín Santander;3.13;6.9;5.5;Avenida Guabinal -> Carrera 12 - Jardín
+Ciudadela Simón Bolívar;La Pola;11.19;21.6;17.3;Avenida Guabinal -> Calle 60 -> Carrera 5 -> Calle 10
+Ciudadela Simón Bolívar;Mirolindo;4.41;8.3;6.6;Calle 103 - Mirolindo
+Ciudadela Simón Bolívar;Picaleña;6.34;11.9;9.5;Calle 103 - Mirolindo -> Avenida Mirolindo
+Ciudadela Simón Bolívar;Ricaurte;13.8;27.1;21.7;Avenida Guabinal -> Calle 60 -> Carrera 5 -> Avenida Ferrocarril -> Calle 21 - Ricaurte
+Ciudadela Simón Bolívar;Santa Helena (U. del Tolima);8.47;17.4;13.9;Avenida Guabinal -> Calle 60 -> Carrera 5 -> Calle 37 - Santa Helena
+Ciudadela Simón Bolívar;Terminal de Transportes;10.94;21.6;17.3;Avenida Guabinal -> Calle 60 -> Carrera 5 -> Calle 19
+Ciudadela Simón Bolívar;Vergel;1.88;3.5;2.8;Avenida Guabinal
+Cádiz;Centro de Distribución Mirolindo;10.01;18.8;15.0;Carrera 5
+Cádiz;Aeropuerto Perales;13.96;23.5;18.8;Carrera 5 -> Vía a Bogotá
+Cádiz;Ambalá;4.63;9.6;7.7;Carrera 5 -> Calle 37 -> Avenida Ambalá
+Cádiz;Ancón;4.03;11.0;8.8;Carrera 4D -> Calle 19 -> Vía Ancón
+Cádiz;Belén;1.73;3.2;2.6;Carrera 5
+Cádiz;Boquerón;7.88;14.7;11.8;Carrera 5 -> Avenida Ferrocarril -> Calle 21 - Ricaurte -> Vía a Armenia
+Cádiz;Calambeo;2.8;7.6;6.1;Carrera 4D -> Calle 19
+Cádiz;Centro - Plaza de Bolívar;2.57;4.8;3.9;Carrera 5
+Cádiz;Ciudadela Simón Bolívar;7.9;14.8;11.8;Carrera 5 -> Calle 60 -> Avenida Guabinal
+Cádiz;El Salado;6.98;14.0;11.2;Carrera 5 -> Calle 37 -> Avenida Ambalá
+Cádiz;Estadio Manuel Murillo Toro;1.43;3.9;3.1;Carrera 4 Estadio
+Cádiz;Hacienda Santa Cruz;12.1;21.3;17.0;Carrera 5 -> Vía Bogotá - Santa Cruz
+Cádiz;Jardín Santander;7.26;14.7;11.7;Carrera 5 -> Calle 60 -> Avenida Guabinal -> Carrera 12 - Jardín
+Cádiz;La Pola;3.3;6.8;5.4;Carrera 5 -> Calle 10
+Cádiz;Mirolindo;8.77;16.4;13.1;Carrera 5
+Cádiz;Picaleña;9.24;18.5;14.8;Carrera 4 Estadio -> Avenida Ferrocarril -> Avenida Ferrocarril - Picaleña
+Cádiz;Ricaurte;5.9;12.3;9.9;Carrera 5 -> Avenida Ferrocarril -> Calle 21 - Ricaurte
+Cádiz;Santa Helena (U. del Tolima);2.75;6.4;5.1;Carrera 4 Estadio -> Avenida Ferrocarril
+Cádiz;Terminal de Transportes;3.05;6.8;5.5;Carrera 5 -> Calle 19
+Cádiz;Vergel;6.01;11.3;9.0;Carrera 5 -> Calle 60 -> Avenida Guabinal
+El Salado;Centro de Distribución Mirolindo;8.74;19.0;15.2;Vía El Salado -> Calle 103 - Mirolindo -> Carrera 5
+El Salado;Aeropuerto Perales;12.68;23.7;19.0;Vía El Salado -> Calle 103 - Mirolindo -> Carrera 5 -> Vía a Bogotá
+El Salado;Ambalá;2.35;4.4;3.5;Avenida Ambalá
+El Salado;Ancón;9.9;21.2;17.0;Avenida Ambalá -> Calle 19 -> Vía Ancón
+El Salado;Belén;8.71;17.3;13.8;Avenida Ambalá -> Calle 37 -> Carrera 5
+El Salado;Boquerón;14.86;28.7;23.0;Avenida Ambalá -> Calle 37 -> Carrera 5 -> Avenida Ferrocarril -> Calle 21 - Ricaurte -> Vía a Armenia
+El Salado;Calambeo;8.67;17.9;14.3;Avenida Ambalá -> Calle 19
+El Salado;Centro - Plaza de Bolívar;9.55;18.8;15.1;Avenida Ambalá -> Calle 37 -> Carrera 5
+El Salado;Ciudadela Simón Bolívar;3.08;8.4;6.7;Vía El Salado
+El Salado;Cádiz;6.98;14.0;11.2;Avenida Ambalá -> Calle 37 -> Carrera 5
+El Salado;Estadio Manuel Murillo Toro;8.41;17.9;14.3;Avenida Ambalá -> Calle 37 -> Carrera 5 -> Carrera 4 Estadio
+El Salado;Hacienda Santa Cruz;10.82;21.5;17.2;Vía El Salado -> Calle 103 - Mirolindo -> Carrera 5 -> Vía Bogotá - Santa Cruz
+El Salado;Jardín Santander;6.21;15.3;12.3;Vía El Salado -> Avenida Guabinal -> Carrera 12 - Jardín
+El Salado;La Pola;10.28;20.8;16.7;Avenida Ambalá -> Calle 37 -> Carrera 5 -> Calle 10
+El Salado;Mirolindo;7.49;16.7;13.3;Vía El Salado -> Calle 103 - Mirolindo
+El Salado;Picaleña;9.42;20.3;16.2;Vía El Salado -> Calle 103 - Mirolindo -> Avenida Mirolindo
+El Salado;Ricaurte;12.89;26.4;21.1;Avenida Ambalá -> Calle 37 -> Carrera 5 -> Avenida Ferrocarril -> Calle 21 - Ricaurte
+El Salado;Santa Helena (U. del Tolima);7.56;16.6;13.3;Avenida Ambalá -> Calle 37 -> Calle 37 - Santa Helena
+El Salado;Terminal de Transportes;10.03;20.9;16.7;Avenida Ambalá -> Calle 37 -> Carrera 5 -> Calle 19
+El Salado;Vergel;4.96;11.9;9.5;Vía El Salado -> Avenida Guabinal
+Estadio Manuel Murillo Toro;Centro de Distribución Mirolindo;9.78;20.0;16.0;Avenida Ferrocarril -> Avenida Ferrocarril - Picaleña -> Calle 145 - Picaleña
+Estadio Manuel Murillo Toro;Aeropuerto Perales;13.72;24.7;19.8;Avenida Ferrocarril -> Avenida Ferrocarril - Picaleña -> Calle 145 - Picaleña -> Vía a Bogotá
+Estadio Manuel Murillo Toro;Ambalá;6.06;13.5;10.8;Carrera 4 Estadio -> Carrera 5 -> Calle 37 -> Avenida Ambalá
+Estadio Manuel Murillo Toro;Ancón;5.46;14.9;11.9;Carrera 4 Estadio -> Carrera 4D -> Calle 19 -> Vía Ancón
+Estadio Manuel Murillo Toro;Belén;3.16;7.1;5.7;Carrera 4 Estadio -> Carrera 5
+Estadio Manuel Murillo Toro;Boquerón;4.81;11.8;9.4;Avenida Ferrocarril -> Calle 25 Sur -> Carrera 8 Sur - Boquerón
+Estadio Manuel Murillo Toro;Calambeo;4.23;11.5;9.2;Carrera 4 Estadio -> Carrera 4D -> Calle 19
+Estadio Manuel Murillo Toro;Centro - Plaza de Bolívar;4.0;8.7;7.0;Carrera 4 Estadio -> Carrera 5
+Estadio Manuel Murillo Toro;Ciudadela Simón Bolívar;9.32;18.7;15.0;Carrera 4 Estadio -> Carrera 5 -> Calle 60 -> Avenida Guabinal
+Estadio Manuel Murillo Toro;Cádiz;1.43;3.9;3.1;Carrera 4 Estadio
+Estadio Manuel Murillo Toro;El Salado;8.41;17.9;14.3;Carrera 4 Estadio -> Carrera 5 -> Calle 37 -> Avenida Ambalá
+Estadio Manuel Murillo Toro;Hacienda Santa Cruz;9.84;20.2;16.2;Avenida Ferrocarril -> Avenida Ferrocarril - Picaleña -> Vía Picaleña
+Estadio Manuel Murillo Toro;Jardín Santander;8.69;18.6;14.9;Carrera 4 Estadio -> Carrera 5 -> Calle 60 -> Avenida Guabinal -> Carrera 12 - Jardín
+Estadio Manuel Murillo Toro;La Pola;4.72;10.7;8.6;Carrera 4 Estadio -> Carrera 5 -> Calle 10
+Estadio Manuel Murillo Toro;Mirolindo;9.74;18.3;14.6;Avenida Ferrocarril -> Avenida Ferrocarril - Picaleña -> Avenida Mirolindo
+Estadio Manuel Murillo Toro;Picaleña;7.81;14.6;11.7;Avenida Ferrocarril -> Avenida Ferrocarril - Picaleña
+Estadio Manuel Murillo Toro;Ricaurte;4.38;9.5;7.6;Avenida Ferrocarril -> Calle 21 - Ricaurte
+Estadio Manuel Murillo Toro;Santa Helena (U. del Tolima);1.32;2.5;2.0;Avenida Ferrocarril
+Estadio Manuel Murillo Toro;Terminal de Transportes;1.37;3.7;3.0;Carrera 4 Estadio
+Estadio Manuel Murillo Toro;Vergel;7.44;15.2;12.1;Carrera 4 Estadio -> Carrera 5 -> Calle 60 -> Avenida Guabinal
+Hacienda Santa Cruz;Centro de Distribución Mirolindo;2.08;2.5;2.0;Vía Bogotá - Santa Cruz
+Hacienda Santa Cruz;Aeropuerto Perales;6.03;7.2;5.8;Vía Bogotá - Santa Cruz -> Vía a Bogotá
+Hacienda Santa Cruz;Ambalá;13.17;25.9;20.7;Vía Bogotá - Santa Cruz -> Carrera 5 -> Calle 103 - Mirolindo -> Vía El Salado -> Avenida Ambalá
+Hacienda Santa Cruz;Ancón;16.13;32.3;25.8;Vía Bogotá - Santa Cruz -> Carrera 5 -> Carrera 4D -> Calle 19 -> Vía Ancón
+Hacienda Santa Cruz;Belén;13.83;24.5;19.6;Vía Bogotá - Santa Cruz -> Carrera 5
+Hacienda Santa Cruz;Boquerón;14.66;32.0;25.6;Vía Picaleña -> Avenida Ferrocarril - Picaleña -> Avenida Ferrocarril -> Calle 25 Sur -> Carrera 8 Sur - Boquerón
+Hacienda Santa Cruz;Calambeo;14.9;28.9;23.1;Vía Bogotá - Santa Cruz -> Carrera 5 -> Carrera 4D -> Calle 19
+Hacienda Santa Cruz;Centro - Plaza de Bolívar;14.67;26.1;20.9;Vía Bogotá - Santa Cruz -> Carrera 5
+Hacienda Santa Cruz;Ciudadela Simón Bolívar;7.75;13.1;10.5;Vía Bogotá - Santa Cruz -> Carrera 5 -> Calle 103 - Mirolindo
+Hacienda Santa Cruz;Cádiz;12.1;21.3;17.0;Vía Bogotá - Santa Cruz -> Carrera 5
+Hacienda Santa Cruz;El Salado;10.82;21.5;17.2;Vía Bogotá - Santa Cruz -> Carrera 5 -> Calle 103 - Mirolindo -> Vía El Salado
+Hacienda Santa Cruz;Estadio Manuel Murillo Toro;9.85;20.2;16.2;Vía Picaleña -> Avenida Ferrocarril - Picaleña -> Avenida Ferrocarril
+Hacienda Santa Cruz;Jardín Santander;9.49;18.2;14.6;Vía Bogotá - Santa Cruz -> Carrera 5 -> Calle 69
+Hacienda Santa Cruz;La Pola;15.39;28.1;22.5;Vía Bogotá - Santa Cruz -> Carrera 5 -> Calle 10
+Hacienda Santa Cruz;Mirolindo;3.33;4.8;3.9;Vía Bogotá - Santa Cruz -> Carrera 5
+Hacienda Santa Cruz;Picaleña;2.04;5.6;4.4;Vía Picaleña
+Hacienda Santa Cruz;Ricaurte;14.22;29.7;23.7;Vía Picaleña -> Avenida Ferrocarril - Picaleña -> Avenida Ferrocarril -> Calle 21 - Ricaurte
+Hacienda Santa Cruz;Santa Helena (U. del Tolima);8.52;17.7;14.2;Vía Picaleña -> Avenida Ferrocarril - Picaleña
+Hacienda Santa Cruz;Terminal de Transportes;11.22;23.9;19.2;Vía Picaleña -> Avenida Ferrocarril - Picaleña -> Avenida Ferrocarril -> Carrera 4 Estadio
+Hacienda Santa Cruz;Vergel;9.63;16.6;13.3;Vía Bogotá - Santa Cruz -> Carrera 5 -> Calle 103 - Mirolindo -> Avenida Guabinal
+Jardín Santander;Centro de Distribución Mirolindo;7.4;15.7;12.6;Calle 69 -> Carrera 5
+Jardín Santander;Aeropuerto Perales;11.35;20.4;16.3;Calle 69 -> Carrera 5 -> Vía a Bogotá
+Jardín Santander;Ambalá;7.31;16.4;13.1;Carrera 12 - Jardín -> Avenida Guabinal -> Calle 42 - Jordán -> Avenida Ambalá
+Jardín Santander;Ancón;10.2;24.5;19.6;Carrera 12 - Jardín -> Avenida Guabinal -> Calle 42 - Jordán -> Avenida Ambalá -> Calle 19 -> Vía Ancón
+Jardín Santander;Belén;8.99;17.9;14.3;Carrera 12 - Jardín -> Avenida Guabinal -> Calle 60 -> Carrera 5
+Jardín Santander;Boquerón;15.14;29.4;23.5;Carrera 12 - Jardín -> Avenida Guabinal -> Calle 60 -> Carrera 5 -> Avenida Ferrocarril -> Calle 21 - Ricaurte -> Vía a Armenia
+Jardín Santander;Calambeo;8.97;21.1;16.9;Carrera 12 - Jardín -> Avenida Guabinal -> Calle 42 - Jordán -> Avenida Ambalá -> Calle 19
+Jardín Santander;Centro - Plaza de Bolívar;9.83;19.5;15.6;Carrera 12 - Jardín -> Avenida Guabinal -> Calle 60 -> Carrera 5
+Jardín Santander;Ciudadela Simón Bolívar;3.13;6.9;5.5;Carrera 12 - Jardín -> Avenida Guabinal
+Jardín Santander;Cádiz;7.26;14.7;11.7;Carrera 12 - Jardín -> Avenida Guabinal -> Calle 60 -> Carrera 5
+Jardín Santander;El Salado;6.21;15.3;12.3;Carrera 12 - Jardín -> Avenida Guabinal -> Vía El Salado
+Jardín Santander;Estadio Manuel Murillo Toro;8.69;18.6;14.9;Carrera 12 - Jardín -> Avenida Guabinal -> Calle 60 -> Carrera 5 -> Carrera 4 Estadio
+Jardín Santander;Hacienda Santa Cruz;9.49;18.2;14.6;Calle 69 -> Carrera 5 -> Vía Bogotá - Santa Cruz
+Jardín Santander;La Pola;10.56;21.5;17.2;Carrera 12 - Jardín -> Avenida Guabinal -> Calle 60 -> Carrera 5 -> Calle 10
+Jardín Santander;Mirolindo;6.15;13.4;10.7;Calle 69 -> Carrera 5
+Jardín Santander;Picaleña;8.08;17.0;13.6;Calle 69 -> Carrera 5 -> Avenida Mirolindo
+Jardín Santander;Ricaurte;13.16;27.0;21.6;Carrera 12 - Jardín -> Avenida Guabinal -> Calle 60 -> Carrera 5 -> Avenida Ferrocarril -> Calle 21 - Ricaurte
+Jardín Santander;Santa Helena (U. del Tolima);7.84;17.3;13.8;Carrera 12 - Jardín -> Avenida Guabinal -> Calle 60 -> Carrera 5 -> Calle 37 - Santa Helena
+Jardín Santander;Terminal de Transportes;10.31;21.5;17.2;Carrera 12 - Jardín -> Avenida Guabinal -> Calle 60 -> Carrera 5 -> Calle 19
+Jardín Santander;Vergel;1.25;3.4;2.7;Carrera 12 - Jardín
+La Pola;Centro de Distribución Mirolindo;13.31;25.6;20.5;Calle 10 -> Carrera 5
+La Pola;Aeropuerto Perales;17.26;30.3;24.2;Calle 10 -> Carrera 5 -> Vía a Bogotá
+La Pola;Ambalá;7.93;16.4;13.1;Calle 10 -> Carrera 5 -> Calle 37 -> Avenida Ambalá
+La Pola;Ancón;1.66;4.5;3.6;Carrera 2 - Ancón
+La Pola;Belén;1.57;3.6;2.8;Calle 10 -> Carrera 5
+La Pola;Boquerón;4.05;8.0;6.4;Avenida Combeima -> Vía a Armenia
+La Pola;Calambeo;2.13;5.8;4.6;Calle 10 -> Carrera 1 - Calambeo
+La Pola;Centro - Plaza de Bolívar;0.73;2.0;1.6;Calle 10
+La Pola;Ciudadela Simón Bolívar;11.19;21.6;17.3;Calle 10 -> Carrera 5 -> Calle 60 -> Avenida Guabinal
+La Pola;Cádiz;3.3;6.8;5.4;Calle 10 -> Carrera 5
+La Pola;El Salado;10.28;20.8;16.7;Calle 10 -> Carrera 5 -> Calle 37 -> Avenida Ambalá
+La Pola;Estadio Manuel Murillo Toro;4.72;10.7;8.6;Calle 10 -> Carrera 5 -> Carrera 4 Estadio
+La Pola;Hacienda Santa Cruz;15.39;28.1;22.5;Calle 10 -> Carrera 5 -> Vía Bogotá - Santa Cruz
+La Pola;Jardín Santander;10.56;21.5;17.2;Calle 10 -> Carrera 5 -> Calle 60 -> Avenida Guabinal -> Carrera 12 - Jardín
+La Pola;Mirolindo;12.06;23.2;18.6;Calle 10 -> Carrera 5
+La Pola;Picaleña;12.54;25.3;20.3;Calle 10 -> Carrera 5 -> Carrera 4 Estadio -> Avenida Ferrocarril -> Avenida Ferrocarril - Picaleña
+La Pola;Ricaurte;2.08;5.7;4.5;Avenida Combeima
+La Pola;Santa Helena (U. del Tolima);6.05;13.2;10.5;Calle 10 -> Carrera 5 -> Carrera 4 Estadio -> Avenida Ferrocarril
+La Pola;Terminal de Transportes;2.88;7.1;5.7;Calle 10 -> Carrera 5 -> Calle 19
+La Pola;Vergel;9.31;18.1;14.5;Calle 10 -> Carrera 5 -> Calle 60 -> Avenida Guabinal
+Mirolindo;Centro de Distribución Mirolindo;1.25;2.3;1.9;Carrera 5
+Mirolindo;Aeropuerto Perales;5.19;7.1;5.7;Carrera 5 -> Vía a Bogotá
+Mirolindo;Ambalá;9.84;21.1;16.9;Calle 103 - Mirolindo -> Vía El Salado -> Avenida Ambalá
+Mirolindo;Ancón;12.8;27.4;21.9;Carrera 5 -> Carrera 4D -> Calle 19 -> Vía Ancón
+Mirolindo;Belén;10.5;19.7;15.7;Carrera 5
+Mirolindo;Boquerón;14.55;30.1;24.0;Avenida Mirolindo -> Avenida Ferrocarril - Picaleña -> Avenida Ferrocarril -> Calle 25 Sur -> Carrera 8 Sur - Boquerón
+Mirolindo;Calambeo;11.57;24.1;19.3;Carrera 5 -> Carrera 4D -> Calle 19
+Mirolindo;Centro - Plaza de Bolívar;11.33;21.3;17.0;Carrera 5
+Mirolindo;Ciudadela Simón Bolívar;4.41;8.3;6.6;Calle 103 - Mirolindo
+Mirolindo;Cádiz;8.77;16.4;13.1;Carrera 5
+Mirolindo;El Salado;7.49;16.7;13.3;Calle 103 - Mirolindo -> Vía El Salado
+Mirolindo;Estadio Manuel Murillo Toro;9.74;18.3;14.6;Avenida Mirolindo -> Avenida Ferrocarril - Picaleña -> Avenida Ferrocarril
+Mirolindo;Hacienda Santa Cruz;3.33;4.8;3.9;Carrera 5 -> Vía Bogotá - Santa Cruz
+Mirolindo;Jardín Santander;6.15;13.4;10.7;Carrera 5 -> Calle 69
+Mirolindo;La Pola;12.06;23.2;18.6;Carrera 5 -> Calle 10
+Mirolindo;Picaleña;1.93;3.6;2.9;Avenida Mirolindo
+Mirolindo;Ricaurte;14.12;27.7;22.2;Avenida Mirolindo -> Avenida Ferrocarril - Picaleña -> Avenida Ferrocarril -> Calle 21 - Ricaurte
+Mirolindo;Santa Helena (U. del Tolima);8.41;15.8;12.6;Avenida Mirolindo -> Avenida Ferrocarril - Picaleña
+Mirolindo;Terminal de Transportes;11.11;22.0;17.6;Avenida Mirolindo -> Avenida Ferrocarril - Picaleña -> Avenida Ferrocarril -> Carrera 4 Estadio
+Mirolindo;Vergel;6.3;11.8;9.4;Calle 103 - Mirolindo -> Avenida Guabinal
+Picaleña;Centro de Distribución Mirolindo;1.97;5.4;4.3;Calle 145 - Picaleña
+Picaleña;Aeropuerto Perales;5.92;10.1;8.1;Calle 145 - Picaleña -> Vía a Bogotá
+Picaleña;Ambalá;11.7;24.4;19.5;Avenida Ferrocarril - Picaleña -> Calle 37 - Santa Helena -> Calle 37 -> Avenida Ambalá
+Picaleña;Ancón;13.27;29.5;23.6;Avenida Ferrocarril - Picaleña -> Avenida Ferrocarril -> Carrera 4 Estadio -> Carrera 4D -> Calle 19 -> Vía Ancón
+Picaleña;Belén;10.97;21.8;17.4;Avenida Ferrocarril - Picaleña -> Avenida Ferrocarril -> Carrera 4 Estadio -> Carrera 5
+Picaleña;Boquerón;12.62;26.4;21.2;Avenida Ferrocarril - Picaleña -> Avenida Ferrocarril -> Calle 25 Sur -> Carrera 8 Sur - Boquerón
+Picaleña;Calambeo;12.04;26.2;20.9;Avenida Ferrocarril - Picaleña -> Avenida Ferrocarril -> Carrera 4 Estadio -> Carrera 4D -> Calle 19
+Picaleña;Centro - Plaza de Bolívar;11.81;23.4;18.7;Avenida Ferrocarril - Picaleña -> Avenida Ferrocarril -> Carrera 4 Estadio -> Carrera 5
+Picaleña;Ciudadela Simón Bolívar;6.34;11.9;9.5;Avenida Mirolindo -> Calle 103 - Mirolindo
+Picaleña;Cádiz;9.24;18.5;14.8;Avenida Ferrocarril - Picaleña -> Avenida Ferrocarril -> Carrera 4 Estadio
+Picaleña;El Salado;9.42;20.3;16.2;Avenida Mirolindo -> Calle 103 - Mirolindo -> Vía El Salado
+Picaleña;Estadio Manuel Murillo Toro;7.81;14.6;11.7;Avenida Ferrocarril - Picaleña -> Avenida Ferrocarril
+Picaleña;Hacienda Santa Cruz;2.04;5.6;4.4;Vía Picaleña
+Picaleña;Jardín Santander;8.08;17.0;13.6;Avenida Mirolindo -> Carrera 5 -> Calle 69
+Picaleña;La Pola;12.54;25.3;20.3;Avenida Ferrocarril - Picaleña -> Avenida Ferrocarril -> Carrera 4 Estadio -> Carrera 5 -> Calle 10
+Picaleña;Mirolindo;1.93;3.6;2.9;Avenida Mirolindo
+Picaleña;Ricaurte;12.19;24.1;19.3;Avenida Ferrocarril - Picaleña -> Avenida Ferrocarril -> Calle 21 - Ricaurte
+Picaleña;Santa Helena (U. del Tolima);6.49;12.2;9.7;Avenida Ferrocarril - Picaleña
+Picaleña;Terminal de Transportes;9.18;18.4;14.7;Avenida Ferrocarril - Picaleña -> Avenida Ferrocarril -> Carrera 4 Estadio
+Picaleña;Vergel;8.23;15.4;12.3;Avenida Mirolindo -> Calle 103 - Mirolindo -> Avenida Guabinal
+Ricaurte;Centro de Distribución Mirolindo;14.16;29.5;23.6;Calle 21 - Ricaurte -> Avenida Ferrocarril -> Avenida Ferrocarril - Picaleña -> Calle 145 - Picaleña
+Ricaurte;Aeropuerto Perales;18.1;34.2;27.4;Calle 21 - Ricaurte -> Avenida Ferrocarril -> Avenida Ferrocarril - Picaleña -> Calle 145 - Picaleña -> Vía a Bogotá
+Ricaurte;Ambalá;10.54;22.0;17.6;Calle 21 - Ricaurte -> Avenida Ferrocarril -> Carrera 5 -> Calle 37 -> Avenida Ambalá
+Ricaurte;Ancón;3.74;10.2;8.2;Avenida Combeima -> Carrera 2 - Ancón
+Ricaurte;Belén;4.17;9.1;7.3;Calle 21 - Ricaurte -> Avenida Ferrocarril -> Carrera 5
+Ricaurte;Boquerón;1.97;2.4;1.9;Vía a Armenia
+Ricaurte;Calambeo;4.73;11.3;9.1;Calle 21 - Ricaurte -> Avenida Ferrocarril -> Carrera 1 - Calambeo
+Ricaurte;Centro - Plaza de Bolívar;3.33;7.5;6.0;Calle 21 - Ricaurte -> Avenida Ferrocarril
+Ricaurte;Ciudadela Simón Bolívar;13.8;27.1;21.7;Calle 21 - Ricaurte -> Avenida Ferrocarril -> Carrera 5 -> Calle 60 -> Avenida Guabinal
+Ricaurte;Cádiz;5.9;12.3;9.9;Calle 21 - Ricaurte -> Avenida Ferrocarril -> Carrera 5
+Ricaurte;El Salado;12.89;26.4;21.1;Calle 21 - Ricaurte -> Avenida Ferrocarril -> Carrera 5 -> Calle 37 -> Avenida Ambalá
+Ricaurte;Estadio Manuel Murillo Toro;4.38;9.5;7.6;Calle 21 - Ricaurte -> Avenida Ferrocarril
+Ricaurte;Hacienda Santa Cruz;14.22;29.7;23.7;Calle 21 - Ricaurte -> Avenida Ferrocarril -> Avenida Ferrocarril - Picaleña -> Vía Picaleña
+Ricaurte;Jardín Santander;13.16;27.0;21.6;Calle 21 - Ricaurte -> Avenida Ferrocarril -> Carrera 5 -> Calle 60 -> Avenida Guabinal -> Carrera 12 - Jardín
+Ricaurte;La Pola;2.08;5.7;4.5;Avenida Combeima
+Ricaurte;Mirolindo;14.12;27.7;22.2;Calle 21 - Ricaurte -> Avenida Ferrocarril -> Avenida Ferrocarril - Picaleña -> Avenida Mirolindo
+Ricaurte;Picaleña;12.19;24.1;19.3;Calle 21 - Ricaurte -> Avenida Ferrocarril -> Avenida Ferrocarril - Picaleña
+Ricaurte;Santa Helena (U. del Tolima);5.7;12.0;9.6;Calle 21 - Ricaurte -> Avenida Ferrocarril
+Ricaurte;Terminal de Transportes;2.42;5.8;4.6;Calle 21 - Ricaurte -> Avenida Ferrocarril
+Ricaurte;Vergel;11.92;23.6;18.9;Calle 21 - Ricaurte -> Avenida Ferrocarril -> Carrera 5 -> Calle 60 -> Avenida Guabinal
+Santa Helena (U. del Tolima);Centro de Distribución Mirolindo;8.45;17.5;14.0;Avenida Ferrocarril - Picaleña -> Calle 145 - Picaleña
+Santa Helena (U. del Tolima);Aeropuerto Perales;12.4;22.3;17.8;Avenida Ferrocarril - Picaleña -> Calle 145 - Picaleña -> Vía a Bogotá
+Santa Helena (U. del Tolima);Ambalá;5.21;12.2;9.8;Calle 37 - Santa Helena -> Calle 37 -> Avenida Ambalá
+Santa Helena (U. del Tolima);Ancón;6.78;17.4;13.9;Avenida Ferrocarril -> Carrera 4 Estadio -> Carrera 4D -> Calle 19 -> Vía Ancón
+Santa Helena (U. del Tolima);Belén;4.48;9.6;7.7;Avenida Ferrocarril -> Carrera 4 Estadio -> Carrera 5
+Santa Helena (U. del Tolima);Boquerón;6.13;14.3;11.4;Avenida Ferrocarril -> Calle 25 Sur -> Carrera 8 Sur - Boquerón
+Santa Helena (U. del Tolima);Calambeo;5.56;14.0;11.2;Avenida Ferrocarril -> Carrera 4 Estadio -> Carrera 4D -> Calle 19
+Santa Helena (U. del Tolima);Centro - Plaza de Bolívar;5.32;11.2;9.0;Avenida Ferrocarril -> Carrera 4 Estadio -> Carrera 5
+Santa Helena (U. del Tolima);Ciudadela Simón Bolívar;8.47;17.4;13.9;Calle 37 - Santa Helena -> Carrera 5 -> Calle 60 -> Avenida Guabinal
+Santa Helena (U. del Tolima);Cádiz;2.75;6.4;5.1;Avenida Ferrocarril -> Carrera 4 Estadio
+Santa Helena (U. del Tolima);El Salado;7.56;16.6;13.3;Calle 37 - Santa Helena -> Calle 37 -> Avenida Ambalá
+Santa Helena (U. del Tolima);Estadio Manuel Murillo Toro;1.32;2.5;2.0;Avenida Ferrocarril
+Santa Helena (U. del Tolima);Hacienda Santa Cruz;8.52;17.7;14.2;Avenida Ferrocarril - Picaleña -> Vía Picaleña
+Santa Helena (U. del Tolima);Jardín Santander;7.84;17.3;13.8;Calle 37 - Santa Helena -> Carrera 5 -> Calle 60 -> Avenida Guabinal -> Carrera 12 - Jardín
+Santa Helena (U. del Tolima);La Pola;6.05;13.2;10.5;Avenida Ferrocarril -> Carrera 4 Estadio -> Carrera 5 -> Calle 10
+Santa Helena (U. del Tolima);Mirolindo;8.41;15.8;12.6;Avenida Ferrocarril - Picaleña -> Avenida Mirolindo
+Santa Helena (U. del Tolima);Picaleña;6.49;12.2;9.7;Avenida Ferrocarril - Picaleña
+Santa Helena (U. del Tolima);Ricaurte;5.7;12.0;9.6;Avenida Ferrocarril -> Calle 21 - Ricaurte
+Santa Helena (U. del Tolima);Terminal de Transportes;2.7;6.2;5.0;Avenida Ferrocarril -> Carrera 4 Estadio
+Santa Helena (U. del Tolima);Vergel;6.59;13.9;11.1;Calle 37 - Santa Helena -> Carrera 5 -> Calle 60 -> Avenida Guabinal
+Terminal de Transportes;Centro de Distribución Mirolindo;11.15;23.8;19.0;Carrera 4 Estadio -> Avenida Ferrocarril -> Avenida Ferrocarril - Picaleña -> Calle 145 - Picaleña
+Terminal de Transportes;Aeropuerto Perales;15.1;28.5;22.8;Carrera 4 Estadio -> Avenida Ferrocarril -> Avenida Ferrocarril - Picaleña -> Calle 145 - Picaleña -> Vía a Bogotá
+Terminal de Transportes;Ambalá;7.68;16.5;13.2;Calle 19 -> Carrera 5 -> Calle 37 -> Avenida Ambalá
+Terminal de Transportes;Ancón;4.54;11.7;9.3;Calle 19 -> Carrera 5 -> Calle 10 -> Carrera 2 - Ancón
+Terminal de Transportes;Belén;1.32;3.6;2.9;Calle 19
+Terminal de Transportes;Boquerón;4.39;8.2;6.5;Avenida Ferrocarril -> Calle 21 - Ricaurte -> Vía a Armenia
+Terminal de Transportes;Calambeo;3.55;9.0;7.2;Calle 19 -> Carrera 5 -> Carrera 1 - Calambeo
+Terminal de Transportes;Centro - Plaza de Bolívar;2.16;5.2;4.1;Calle 19 -> Carrera 5
+Terminal de Transportes;Ciudadela Simón Bolívar;10.94;21.6;17.3;Calle 19 -> Carrera 5 -> Calle 60 -> Avenida Guabinal
+Terminal de Transportes;Cádiz;3.05;6.8;5.5;Calle 19 -> Carrera 5
+Terminal de Transportes;El Salado;10.03;20.9;16.7;Calle 19 -> Carrera 5 -> Calle 37 -> Avenida Ambalá
+Terminal de Transportes;Estadio Manuel Murillo Toro;1.37;3.7;3.0;Carrera 4 Estadio
+Terminal de Transportes;Hacienda Santa Cruz;11.22;23.9;19.2;Carrera 4 Estadio -> Avenida Ferrocarril -> Avenida Ferrocarril - Picaleña -> Vía Picaleña
+Terminal de Transportes;Jardín Santander;10.31;21.5;17.2;Calle 19 -> Carrera 5 -> Calle 60 -> Avenida Guabinal -> Carrera 12 - Jardín
+Terminal de Transportes;La Pola;2.88;7.1;5.7;Calle 19 -> Carrera 5 -> Calle 10
+Terminal de Transportes;Mirolindo;11.11;22.0;17.6;Carrera 4 Estadio -> Avenida Ferrocarril -> Avenida Ferrocarril - Picaleña -> Avenida Mirolindo
+Terminal de Transportes;Picaleña;9.18;18.4;14.7;Carrera 4 Estadio -> Avenida Ferrocarril -> Avenida Ferrocarril - Picaleña
+Terminal de Transportes;Ricaurte;2.42;5.8;4.6;Avenida Ferrocarril -> Calle 21 - Ricaurte
+Terminal de Transportes;Santa Helena (U. del Tolima);2.7;6.2;5.0;Carrera 4 Estadio -> Avenida Ferrocarril
+Terminal de Transportes;Vergel;9.06;18.1;14.5;Calle 19 -> Carrera 5 -> Calle 60 -> Avenida Guabinal
+Vergel;Centro de Distribución Mirolindo;7.54;14.1;11.3;Avenida Guabinal -> Calle 103 - Mirolindo -> Carrera 5
+Vergel;Aeropuerto Perales;11.49;18.9;15.1;Avenida Guabinal -> Calle 103 - Mirolindo -> Carrera 5 -> Vía a Bogotá
+Vergel;Ambalá;6.07;13.0;10.4;Avenida Guabinal -> Calle 42 - Jordán -> Avenida Ambalá
+Vergel;Ancón;8.95;21.1;16.9;Avenida Guabinal -> Calle 42 - Jordán -> Avenida Ambalá -> Calle 19 -> Vía Ancón
+Vergel;Belén;7.74;14.5;11.6;Avenida Guabinal -> Calle 60 -> Carrera 5
+Vergel;Boquerón;13.89;26.0;20.8;Avenida Guabinal -> Calle 60 -> Carrera 5 -> Avenida Ferrocarril -> Calle 21 - Ricaurte -> Vía a Armenia
+Vergel;Calambeo;7.72;17.7;14.2;Avenida Guabinal -> Calle 42 - Jordán -> Avenida Ambalá -> Calle 19
+Vergel;Centro - Plaza de Bolívar;8.58;16.1;12.9;Avenida Guabinal -> Calle 60 -> Carrera 5
+Vergel;Ciudadela Simón Bolívar;1.88;3.5;2.8;Avenida Guabinal
+Vergel;Cádiz;6.01;11.3;9.0;Avenida Guabinal -> Calle 60 -> Carrera 5
+Vergel;El Salado;4.96;11.9;9.5;Avenida Guabinal -> Vía El Salado
+Vergel;Estadio Manuel Murillo Toro;7.44;15.2;12.1;Avenida Guabinal -> Calle 60 -> Carrera 5 -> Carrera 4 Estadio
+Vergel;Hacienda Santa Cruz;9.63;16.6;13.3;Avenida Guabinal -> Calle 103 - Mirolindo -> Carrera 5 -> Vía Bogotá - Santa Cruz
+Vergel;Jardín Santander;1.25;3.4;2.7;Carrera 12 - Jardín
+Vergel;La Pola;9.31;18.1;14.5;Avenida Guabinal -> Calle 60 -> Carrera 5 -> Calle 10
+Vergel;Mirolindo;6.3;11.8;9.4;Avenida Guabinal -> Calle 103 - Mirolindo
+Vergel;Picaleña;8.23;15.4;12.3;Avenida Guabinal -> Calle 103 - Mirolindo -> Avenida Mirolindo
+Vergel;Ricaurte;11.92;23.6;18.9;Avenida Guabinal -> Calle 60 -> Carrera 5 -> Avenida Ferrocarril -> Calle 21 - Ricaurte
+Vergel;Santa Helena (U. del Tolima);6.59;13.9;11.1;Avenida Guabinal -> Calle 60 -> Carrera 5 -> Calle 37 - Santa Helena
+Vergel;Terminal de Transportes;9.06;18.1;14.5;Avenida Guabinal -> Calle 60 -> Carrera 5 -> Calle 19
